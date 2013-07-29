@@ -23,10 +23,15 @@ For example, this has the kernel headers included:
 Now, just grab the installer script and run it:
 	```
 	wget http://rcn-ee.net/deb/wheezy-armhf/v3.8.13-bone23/install-me.sh
+	
 	su
+
 	sh install-me.sh
+
 	reboot
+
 	```
+
 After rebooting, run 'uname -r' and the result should be '3.8.13-bone23'.
 
 3. Use this script to download, patch and prepare the kernel source for your board. This will not work if you don't have kernel headers available.
@@ -51,4 +56,4 @@ The command 'dmesg' will print kernel messages and help you debug problems.
 
 This driver bit-bangs SPI instead of using the hardware SPI. The reason is that the hardware SPI has a pin conflict with the HDMI output on the BeagleBone Black, and I found it a better compromise to bit-bang rather than disable the HDMI.
 
-You also might notice that at several points above, I used 'su' instead of 'sudo', which is probably considered poor practice. The reason for this is that several of the required steps fail completely with sudo.
+You also might notice that at several points above, I used 'su' instead of 'sudo', which is probably considered poor practice. The reason for this is that several of the required steps fail with sudo.
