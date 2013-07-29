@@ -42,7 +42,16 @@ A fair amount of work has to be done first, before the driver code can be compil
 	```
 	The command 'dmesg' will print kernel messages and help you debug problems.
 
-5. Finally, print some text on the LCD!
+5. Wire up the LCD. You can change the pin definitions in st7565.c to suit your needs. By default, they are:
+	```
+	#define ST7565_CS	GPIO_TO_PIN(1, 13)
+	#define ST7565_RST	GPIO_TO_PIN(1, 12)
+	#define ST7565_A0	GPIO_TO_PIN(0, 26)
+	#define ST7565_CLK	GPIO_TO_PIN(1, 15)
+	#define ST7565_SI	GPIO_TO_PIN(1, 14)
+	```
+
+6. Finally, print some text on the LCD!
 	```
 	su
 	echo "hi from linux" > /dev/st7565
