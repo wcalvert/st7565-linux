@@ -28,10 +28,10 @@ A fair amount of work has to be done first, before the driver code can be compil
 	reboot
 	```
 
-After rebooting, run 'uname -r' and the result should be '3.8.13-bone23'.
+	After rebooting, run 'uname -r' and the result should be '3.8.13-bone23'.
 
 3. Use this script to download, patch and prepare the kernel source for your board. This will not work if you don't have kernel headers available.
->https://github.com/gkaindl/beaglebone-ubuntu-scripts/blob/master/bb-get-rcn-kernel-source.sh
+	>https://github.com/gkaindl/beaglebone-ubuntu-scripts/blob/master/bb-get-rcn-kernel-source.sh
 
 4. Now you should be able to compile kernel drivers.
 	```
@@ -40,7 +40,7 @@ After rebooting, run 'uname -r' and the result should be '3.8.13-bone23'.
 	su
 	insmod st7565.ko
 	```
-The command 'dmesg' will print kernel messages and help you debug problems.
+	The command 'dmesg' will print kernel messages and help you debug problems.
 
 5. Finally, print some text on the LCD!
 	```
