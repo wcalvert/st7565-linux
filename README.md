@@ -15,21 +15,17 @@ A fair amount of work has to be done first, before the driver code can be compil
 >http://elinux.org/BeagleBoardDebian
 
 2. Install a new kernel and kernel headers. You must make sure to choose one that has the kernel headers included; not all of them do.
->http://rcn-ee.net/deb/wheezy-armhf/
+    >http://rcn-ee.net/deb/wheezy-armhf/
 
-For example, this has the kernel headers included:
->http://rcn-ee.net/deb/wheezy-armhf/v3.8.13-bone23/
+    For example, this has the kernel headers included:
+    >http://rcn-ee.net/deb/wheezy-armhf/v3.8.13-bone23/
 
-Now, just grab the installer script and run it:
-	```
+    Now, just grab the installer script and run it:
+    ```
 	wget http://rcn-ee.net/deb/wheezy-armhf/v3.8.13-bone23/install-me.sh
-	
 	su
-
 	sh install-me.sh
-
 	reboot
-
 	```
 
 After rebooting, run 'uname -r' and the result should be '3.8.13-bone23'.
