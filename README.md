@@ -1,5 +1,7 @@
 # st7565-linux
 
+![Intro image](http://cyantist.org/hello.jpg "Intro Image")
+
 ## Overview
 
 This is a proof of concept for using a small graphical LCD with the ST7565 chipset as a character device in Linux.
