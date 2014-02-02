@@ -1,6 +1,6 @@
 # st7565-linux
 
-![Intro image](http://cyantist.org/hello.jpg "Intro Image")
+![Intro image](http://76.72.167.207/hello.jpg "Intro Image")
 
 ## Overview
 
